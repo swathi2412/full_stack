@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Recommendation Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🧠 LLM Recommendation Engine</h1>
+
+<div class="container">
+
+<div class="card">
+    <h2>User Dashboard</h2>
+    <input id="userId" placeholder="Enter User ID (1234)">
+    <button onclick="loadUser()">Get Recommendations</button>
+    <div id="profile"></div>
+    <div id="recommendations"></div>
+</div>
+
+<div class="card">
+    <h2>Natural Language Search</h2>
+    <input id="query" placeholder="Show me laptops for programming under 60000">
+    <button onclick="search()">Search</button>
+    <div id="searchResults"></div>
+</div>
+
+<div class="card">
+    <h2>Cold Start (New User)</h2>
+    <button onclick="coldStart()">Show Popular Items</button>
+    <div id="cold"></div>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
